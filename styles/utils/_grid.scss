@@ -1,0 +1,39 @@
+$gutter: 1.5rem;
+
+.container {
+    width: 100%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 3rem;
+}
+
+@media (min-width: $bp-sm) {
+    .container {
+        max-width: $bp-sm;
+    }
+}
+
+@media (min-width: $bp-md) {
+    .container {
+        max-width: $bp-md;
+    }
+}
+
+@media (min-width: $bp-lg) {
+    .container {
+        max-width: $bp-lg;
+    }
+}
+
+@media (min-width: $bp-xl) {
+    .container {
+        max-width: $bp-xl;
+    }
+}

@@ -1,0 +1,34 @@
+.button {
+    display: inline-block;
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+
+    &--primary {
+        background-color: $dark;
+        border: 2px solid $dark;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            outline: none;
+            background-color: lighten($dark, 8%);
+            border: 2px solid lighten($dark, 8%);
+        }
+    }
+    &--secondary {
+        border: 2px solid $primary;
+        background-color: transparent;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            outline: none;
+            background-color: $primary;
+        }
+    }
+}

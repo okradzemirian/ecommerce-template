@@ -1,0 +1,23 @@
+{
+    "name": "fitness-landing",
+    "version": "1.0.0",
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "build": "parcel build index.html --no-source-maps",
+        "dev": "parcel index.html",
+        "serve": "live-server dist"
+    },
+    "dependencies": {
+        "intersection-observer": "^0.7.0",
+        "normalize.css": "^8.0.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.6.1",
+        "babel-core": "^6.26.3",
+        "babel-preset-env": "^1.7.0",
+        "live-server": "^1.2.1",
+        "node-sass": "^4.12.0",
+        "parcel-bundler": "^1.12.3"
+    }
+}
